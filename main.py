@@ -11,9 +11,9 @@ x = 150
 y = 150
 while True:#игровой цикл
     screen.fill(background_color)
-    r = pygame.Rect(x, y, 60, 60)
+    r = pygame.Rect(x, y, 60, 60) #создание прямоугольника
     color = (50, 70, 40)
-    pygame.draw.rect(screen, color, r)
+    pygame.draw.rect(screen, color, r) #отрисовка прямоугольника
     clock.tick(40)#40фпс\с
     pygame.display.update()#оюновление содержимого экрана
     for event in pygame.event.get():#события
